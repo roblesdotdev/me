@@ -1,6 +1,7 @@
 import { flatRoutes } from 'remix-flat-routes'
 /** @type {import('@remix-run/dev/dist/vite/plugin').VitePluginConfig} */
 export default {
+  basename: '/me/',
   ssr: false,
   ignoredRouteFiles: ['**/*'],
   serverModuleFormat: 'esm',

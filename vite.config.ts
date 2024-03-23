@@ -6,6 +6,7 @@ import remixConfig from './remix.config'
 const isProd = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
+  base: '/me/',
   build: { minify: isProd ? 'terser' : false, sourcemap: true, ssr: false },
   plugins: [remix(remixConfig), tsconfigPaths()],
 })
