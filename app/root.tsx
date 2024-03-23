@@ -1,3 +1,4 @@
+import { LinksFunction } from "@remix-run/node";
 import {
   Links,
   Meta,
@@ -5,6 +6,11 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import globalStylesHref from "~/styles/global.css?url";
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: globalStylesHref },
+];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
