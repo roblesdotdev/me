@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 :root {
-  @apply text-neutral-400 bg-neutral-900 antialiased;
+  @apply bg-neutral-900 text-neutral-400 antialiased;
 }
